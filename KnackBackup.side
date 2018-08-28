@@ -1,0 +1,1737 @@
+{
+  "id": "19eb5289-cf6c-407c-9488-58c8d5cc1e9f",
+  "name": "Untitled Project",
+  "url": "https://builder.knack.com/spherethat/sphere#data/object_11/records",
+  "tests": [{
+    "id": "e6341c86-36d0-4057-bc78-c8dc0ad2d997",
+    "name": "Knack Backup",
+    "commands": [{
+      "id": "02c05a8b-8324-460f-abde-67809d7a3b19",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_11/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32090536-e423-4e1a-acbb-7ac8623d10f3",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9af71e74-4012-4346-9878-a93e3d8bc1e2",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9e0ef40-3540-4c2a-a819-007aa66e0a99",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_74/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cbf924a-0b84-47a6-85e2-8f40785c8199",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eaf6c40-797e-4593-b640-dd13e4960a07",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3789a4c-09c5-4f28-8f01-057e2651c141",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_61/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "325dd6ac-bee6-4be3-9249-4a092566e578",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4869ef5-3c87-404b-a7f2-3dc4590da059",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9de7cf5f-740a-4c61-982e-771f245988a6",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_62/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc2eafe0-bea1-4160-b069-ec36f931255c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93794e6e-ce8c-47ef-a5c5-1975c9ab14b0",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dde02bf3-9fd3-4480-a2c4-ba75ee80fb31",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_60/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e82efd0-b7d5-4b94-bc18-228bc4ce5e4d",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1e1b4c1-c014-4c2d-8a95-de537ce16599",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa45d224-c3f6-42cb-bde9-cda54008f777",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_49/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa596d90-1ee1-49aa-8f49-eeaaba6b811f",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fad11bcb-f3a1-4a90-9284-c01fd0f97a49",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e281e95-6f28-4c2c-8daa-55b2f71d479b",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_2/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36b81101-1972-4ea2-9245-445f3af6e737",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d363189e-8063-4fd9-84b2-55fa1294ca9e",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59f72eaf-caba-49e2-a5c6-42bc0a86aed3",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_50/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "233b4976-fa95-416e-909e-4a4b8a041e9a",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c6da47f-e165-46a0-aa6e-7d82cc62ca05",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04650074-2193-437c-bb79-d328d12b505f",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_57/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "659825f2-9c62-47e3-9bce-dafa2c2b89b8",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10f19ae0-f158-4cc3-afbe-1f4207ac31b8",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcfe7d13-6f3c-4670-815f-3150de9f4183",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_58/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3ccecd2-0221-44f1-92c6-6b1843cb976d",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "436e944c-a4d3-4ed3-bebb-4a7ef8cb339b",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cf9e4dc-c292-407e-9d98-ed499e343459",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_1/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0be01b0e-5491-4430-9287-fd9458265a2b",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51d65c50-a7c7-438e-b941-39195f3cf530",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9ee235b-fb55-46c1-813d-7cca2c413d89",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_79/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d88a6add-4179-472f-95a5-fbbb20ad4bd8",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b019bfed-acca-49f2-8c26-649c4f9fe7d2",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90c0a802-32cc-4c76-b3a7-753b243b8a7c",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_66/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec33c743-cf60-4c71-84d7-284dddec4d62",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "daf8f893-0011-4fbf-a610-68b05816a34a",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dab6a28d-d2ad-4552-b1d5-f877f80852bc",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_4/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43144cc4-efec-42f8-b67c-1c6b6a3119b0",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee2b42b9-311b-4a98-8997-f757ea0f8339",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0342831-d3bb-4b9c-9fbd-d80e9d84ade7",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_76/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e94f670-a310-4f27-ae49-3f6e59f3756c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3e7919b-329e-431e-8831-b5b7ff5f4308",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06355ea8-6f53-4169-95a0-6ebb7d3ca99b",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_71/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e9b944e-0905-4a7f-b0da-a7ba778f06a6",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5327c5b7-1656-4014-8969-9bccd606b228",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c5ab6b6-d72d-4d18-81e5-918afb9947a5",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_41/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c442ca35-230c-4f83-aacf-bc87e7a8edef",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29537026-ba02-4622-acff-03d549caef71",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d767daf-9bb4-4308-9ed1-b4115579088f",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_6/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f01a0d2c-ab29-4e02-a394-9faf505ed975",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb56da4b-0ea3-4a99-af64-d3cacc19ecad",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd48945c-4097-4878-8650-6bdcd46fdcd5",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_75/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a52d62a-53ed-43e8-a5d5-b23484fe3123",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e9950f3-2078-47a3-98d2-6b15628f1ffc",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfb4321b-b7a3-4f3a-a4ee-364f6a6b6d67",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_53/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bbd4ebd-ae9d-41fb-92c9-afe8f7bd65c2",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4acd445-0d67-443b-9761-4483585e49fb",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8406b132-4ddc-4241-9826-0bd959e6b28f",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_29/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e814d442-d2f0-4314-b5b0-b0aa5730c23a",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcad82ef-0157-42db-a0c0-ff94a163d769",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "261fe78a-ea22-431a-b447-999349d60390",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_48/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7de93ba-1482-4f3b-a8d4-638cdb42be68",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1690481-d500-40cb-a523-bd8f048a3093",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbad0afd-6917-4630-b8e0-869aaacb9f54",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_43/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30e4b204-0efe-4e8e-b2d0-cd263bf45a36",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5b881b7-f111-4d2b-b63b-bc7904f81772",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8497ecf1-7fcd-4c4d-bc26-1e30b547bf6d",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_44/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b02d8222-4a32-4ed2-a994-6beb7ef4fccc",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74347cfa-210b-4c48-af54-e37d557f4843",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c028615-7829-4779-a573-199114b0297d",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_46/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d315c663-6c16-4f9b-893e-d8d6f7cb4243",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b962abf1-1153-442f-a8a3-b6c56b265a25",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9f8f9bb-978a-446a-b41d-96db7cf133c5",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_27/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6888fba-cfac-45bf-9c93-d5c42e430ef3",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e36e45be-3be9-44da-ae7a-609b81fdb07a",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "226f146b-6236-4ea7-8452-fe12fd72dd0a",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_8/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80c1a556-6a5d-440b-990c-12def872c885",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8b36a93-95d9-493f-915e-697f973f2e92",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bf3fdb5-5311-4867-94eb-27aa48f23472",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_23/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1cbb916-9567-4f49-9a0d-0b9d4241c7d9",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d1612a7-2c90-414d-9038-5a23b0d5ce27",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68d6465a-bb9a-422d-b207-3d57c5ddebb5",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_25/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6ae4dba-503e-4e29-bf6d-32a56604cd1d",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0613c4f5-60e3-4c31-87ac-6289bdd37f12",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3899f962-a47a-4ec1-9467-8ebdf5ad726d",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_13/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45fa088a-1543-4528-a685-964fd9a2f209",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9602d5f5-54c4-455e-83a7-5a902478eceb",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7c2b3b0-48f7-4c21-aa98-892cfc760d83",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_14/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e09d267f-95be-47b6-ae9c-eda68c17b305",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10907c13-9f79-4da4-948d-b393a83141e0",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86dccd6b-c2b9-4a85-be2e-58f639a7a489",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_32/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20055ed6-f8a8-442f-9982-a931174d916e",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c82a57ce-aad3-4e17-a384-ebb543fd3734",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29e318aa-ee2f-4b8b-be15-31b3486353be",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_38/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f21cf9e-410d-45dd-bc86-befed0e7514b",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "620191a3-9cea-450b-b715-13a3e3f64b2f",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64614c35-75d2-4b63-b432-cbc34c898b25",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_42/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b9845cf-139b-40de-8ea3-84230ee6998c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e99a1581-3fc5-4115-8c10-6d96746a748a",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3c88227-071f-4fcd-8cac-0ce9c277f72a",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_40/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "843d71a6-e02d-4da1-a7b9-9c87f86a3b21",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aede3191-0c3d-48d5-899e-8711b12d3b7d",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bedcf010-c943-45db-96e2-acb7a7d91f34",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_39/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffc813d4-bcc4-42e4-ba4d-1884fdef4049",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b962f7c-e511-442d-a380-617dd4e8d6a5",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1779bdb1-c5c6-4017-aaef-98301aaeb557",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_63/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb4cfa2e-f254-4c02-8a5b-d1b40929bc1b",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab116e9c-bdac-4069-9e1c-8c90a9dfa2dc",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5d22937-a20a-4197-9465-66344dcc5a2b",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_7/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9baefb07-2433-4321-a021-2778c98688fd",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fad7de76-0a23-48bd-aa6e-ca1cda239006",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7394ad6-611a-4fae-a523-ddad7a33147d",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_19/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa730670-bbfe-4557-8d37-97c17cd171b9",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14a4434d-b0d9-4c32-b55e-4027ba885e71",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8bf9e0b-5a04-4ab5-bfef-a443732ef8c8",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_20/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8b4bf19-9d2c-49aa-800d-7f13f6b81fca",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99d9dbb7-1244-4ff5-929e-f93557d973cd",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2add8630-4043-4523-918b-c94797edbe05",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_21/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6442b200-4e5a-4da2-ad29-5a70a457a751",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24bac44c-0df4-438b-aadf-0bd9f3aacef5",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20681b8e-4b6d-4e06-ada3-e61275dbb0a0",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_22/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73d88358-0b9e-419f-ade1-6e662aebd44d",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ed33074-9100-4970-b626-59ea99fcb990",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7182ab54-808d-414c-bd22-d6420c6ec678",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_35/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33c189bd-82f7-457b-84db-8890d5086c24",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa7ea14d-07e8-4b05-8fb2-ac320e9d17bb",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47f77bf7-e88c-4682-9822-9852d152e134",
+      "comment": "",
+      "command": "open",
+      "target": "https://builder.knack.com/spherethat/sphere#data/object_36/records",
+      "targets": [
+        ["css=span.label", "css"],
+        ["//li[@id='object_11']/a/span", "xpath:idRelative"],
+        ["//div[2]/div[2]/div/ul/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4609203d-ca7d-4f4e-bda8-d6d990b726f1",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Export",
+      "targets": [
+        ["linkText=Export", "linkText"],
+        ["css=#export-records-li > a", "css"],
+        ["//a[contains(text(),'Export')]", "xpath:link"],
+        ["//li[@id='export-records-li']/a", "xpath:idRelative"],
+        ["//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11c78a93-ea06-45a3-b19a-49b4d6d90e10",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=export-records-link-csv",
+      "targets": [
+        ["id=export-records-link-csv", "id"],
+        ["linkText=csv", "linkText"],
+        ["css=#export-records-link-csv", "css"],
+        ["//a[contains(text(),'csv')]", "xpath:link"],
+        ["//a[@id='export-records-link-csv']", "xpath:attributes"],
+        ["//div[@id='export-links']/ul/li/a", "xpath:idRelative"],
+        ["//div[43]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "38dcab4f-da66-4efd-a6d9-e16ac2d3b515",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://builder.knack.com/spherethat/sphere#data/object_11/records"],
+  "plugins": [],
+  "version": "1.0"
+}
