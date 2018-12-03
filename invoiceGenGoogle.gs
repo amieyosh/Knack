@@ -56,9 +56,10 @@ function doPost(e) {
   };
 
   var baseKnackUrl =
-    'https://api.knack.com/v1/objects/object_4/records?page=1&rows_per_page=1000&filters=[{"field":"field_793","operator":"is","value":["' +
+    'https://api.knack.com/v1/pages/scene_705/views/view_1751/records?page=1&rows_per_page=1000&filters=[{"field":"field_793","operator":"is","value":["' +
     bsId +
     '"]}]';
+
   var knackUrl = encodeURI(baseKnackUrl);
 
   var response = UrlFetchApp.fetch(knackUrl, options);
