@@ -7,10 +7,10 @@ function add(a, b) {
   return parseFloat(a) + parseFloat(b);
 }
 
-function uniq_fast(a) {
+function uniqFast(arr) {
   var seen = {};
   var out = [];
-  var len = a.length;
+  var len = arr.length;
   var j = 0;
   for (var i = 0; i < len; i++) {
     var item = a[i];
@@ -25,7 +25,7 @@ function uniq_fast(a) {
 function priceWithTax(basePrice, taxRate) {
   var clnBP = parseFloat(basePrice);
   var clnTR = parseFloat(taxRate);
-  return Math.round(clnBP * 100 * (1 + clnTR)) / 100;
+  return parseFloat(Math.round(clnBP * 100 * (1 + clnTR)) / 100).toFixed(2);
 }
 
 function doGet(e) {}
@@ -78,20 +78,19 @@ function doPost(e) {
     }
 
     rawSales.push({
-      model: data.records[i].field_241,
-      condition: data.records[i].field_464,
-      carrier: data.records[i].field_243,
-      preTaxPrice: parseFloat(data.records[i].field_1717_raw).toFixed(2),
-      Price: parseFloat(data.records[i].field_57_raw).toFixed(2),
+      /* model: data.records[i].field_240,
+      condition: data.records[i].field_238,
+      carrier: data.records[i].field_239,*/
+      preTaxPrice: '$' + parseFloat(salePrice).toFixed(2),
+      price: '$' + priceWithTax(salePrice, taxrateFloat),
       unique:
-        data.records[i].field_241 +
+        data.records[i].field_240 +
         '//' +
-        data.records[i].field_464 +
+        data.records[i].field_238 +
         '//' +
-        data.records[i].field_243 +
+        data.records[i].field_239 +
         '//' +
-        parseFloat(data.records[i].field_1717_raw).toFixed(2),
-      identifier: data.records[i].field_54_raw[0].identifier,
+        parseFloat(salePrice).toFixed(2),
     });
   }
 
@@ -99,7 +98,7 @@ function doPost(e) {
     return item.unique;
   });
 
-  var lineItems = uniq_fast(extractUniques);
+  var lineItems = uniqFast(extractUniques);
 
   console.log(lineItems);
 
@@ -166,3 +165,15 @@ function doPost(e) {
   }
   table.removeRow(1);
 }
+
+doc.saveAndClose();
+var pdf_file = doc.getAs('application/pdf');
+GmailApp.sendEmail(
+    'alee@spherethat.com',
+    'Attachment example',
+    'Please see the attached file.',
+    {
+      attachments: [pdf_file],
+      name: 'Test Name',
+    }
+);
