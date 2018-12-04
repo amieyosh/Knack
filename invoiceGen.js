@@ -10,7 +10,7 @@ $(document).on('knack-view-render.view_1138', function(event, view, data) {
 
   // create OBSW textbox and button
   $('#view_1138 .kn-button-menu').after(
-      '<div class=\'clear\'><br><textarea id=\'obswText\' rows=\'10\' cols=\'50\' placeholder=\'Scan imeis in here\'></textarea></div> <br> <div><a id=\'bulkOBSW\' class=\'kn-button\'>Bulk OBSW</a></div>'
+      '<div class="clear"><br><textarea id="obswText" rows="10" cols="50" placeholder="Scan imeis in here"></textarea></div> <br> <div><a id="bulkOBSW" class="kn-button">Bulk OBSW</a></div>'
   );
 
   let url = $(location)
@@ -115,7 +115,7 @@ $(document).on('knack-view-render.view_1592', function(event, view, data) {
   };
 
   $('#view_1592 .view-header').after(
-      '<input type=\'submit\' value=\'Bulk Pricer\' id=\'bulkPricer\'> &nbsp &nbsp <input type=\'submit\' value=\'Log Sale\' id=\'logSale\'><br><div id=\'priceTable\'> </div><div id=\'priceSubmitCont\'><br><input type=\'submit\' id=\'priceSubmit\' value=\'Batch Price Update\'><br><br></div>'
+      '<input type="submit" value="Bulk Pricer" id="bulkPricer"> &nbsp &nbsp <input type="submit" value="Log Sale" id="logSale"> &nbsp &nbsp <input type="submit" value="Generate Invoice [Dev]" id="genInvoice"><br><div id="priceTable"> </div><div id="priceSubmitCont"><br><input type="submit" id="priceSubmit" value="Batch Price Update"><br><br></div>'
   );
 
   $('#priceSubmitCont').hide();
@@ -128,13 +128,19 @@ $(document).on('knack-view-render.view_1592', function(event, view, data) {
     $('#priceTable').empty();
     let skuData = [];
     for (let i = 0; i < models.length; i++) {
+      let skuRawString = models[i].attributes.field_12_raw +
+        models[i].attributes.field_13_raw +
+        models[i].attributes.field_49_raw
+      
+      let skuClean = skuRawString.split(' ').join('_')
       skuData.push({
-        sku:
+        Name:
           models[i].attributes.field_12_raw +
           ' ' +
           models[i].attributes.field_13_raw +
           ' ' +
           models[i].attributes.field_49_raw,
+        Sku: skuClean
         id: models[i].attributes.id,
       });
     }
@@ -171,7 +177,7 @@ $(document).on('knack-view-render.view_1592', function(event, view, data) {
               '<td>' +
             skusUnique[i] +
             '</td>' +
-            '<td><input type="number" step="0.01" id="price' +
+            '<td><input type="number" step="0.01" id="price">' +
             skusUnique[i] +
             '"></td>'
           );
