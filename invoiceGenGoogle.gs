@@ -2,7 +2,6 @@
 /* eslint-disable max-len */
 /* eslint-disable prefer-const */
 /* eslint-disable no-var */
-
 function add(a, b) {
   return parseFloat(a) + parseFloat(b);
 }
@@ -13,7 +12,7 @@ function uniqFast(arr) {
   var len = arr.length;
   var j = 0;
   for (var i = 0; i < len; i++) {
-    var item = a[i];
+    var item = arr[i];
     if (seen[item] !== 1) {
       seen[item] = 1;
       out[j++] = item;
@@ -37,13 +36,9 @@ function doPost(e) {
   var city = decodeURIComponent(e.parameter.ct);
   var prov = decodeURIComponent(e.parameter.pr);
   var postal = decodeURIComponent(e.parameter.pc);
-  var pretax = decodeURIComponent(e.parameter.pt);
   var taxrate = decodeURIComponent(e.parameter.tr).replace('#', '%');
   var taxrateFloat = decodeURIComponent(e.parameter.trf);
-  var taxamt = decodeURIComponent(e.parameter.ta);
-  var total = decodeURIComponent(e.parameter.tt);
   var company = decodeURIComponent(e.parameter.co);
-
   var bsId = decodeURIComponent(e.parameter.id);
 
   var options = {
@@ -67,26 +62,25 @@ function doPost(e) {
   var data = JSON.parse(json);
 
   var rawSales = [];
+  var totalArr = [];
 
   for (var i = 0; i < data.records.length; i++) {
     var salePrice;
 
     if (data.records[i].field_1660 === '') {
-      salePrice = priceWithTax(data.records[i].field_919_raw, taxrateFloat);
+      salePrice = data.records[i].field_919_raw;
+      totalArr.push(data.records[i].field_919_raw);
     } else {
-      salePrice = priceWithTax(data.records[i].field_1660_raw, taxrateFloat);
+      salePrice = data.records[i].field_1660_raw;
+      totalArr.push(data.records[i].field_1660);
     }
 
     rawSales.push({
-      /* model: data.records[i].field_240,
-      condition: data.records[i].field_238,
-      carrier: data.records[i].field_239,*/
-      preTaxPrice: '$' + parseFloat(salePrice).toFixed(2),
-      price: '$' + priceWithTax(salePrice, taxrateFloat),
+      preTaxPrice: salePrice,
       unique:
         data.records[i].field_240 +
         '//' +
-        data.records[i].field_238 +
+        data.records[i].field_1480 +
         '//' +
         data.records[i].field_239 +
         '//' +
@@ -116,26 +110,51 @@ function doPost(e) {
     var desc = saleItem.split('//');
     var grade = desc[1].split(' ');
 
-    var object = [
-      desc[0], // Model Name
-      grade[1], // Grade
-      desc[2], // Carrier
-      priceArr.length, // Quantity
-      '$' + desc[3], // Price
-      '$' + parseFloat(priceArr.reduce(add, 0)).toFixed(2), // subtotal
-    ];
+    if (desc[3] < 0) {
+      var object = [
+        desc[0], // Model Name
+        grade[1], // Grade
+        desc[2], // Carrier
+        ' ', // Quantity
+        '($' + parseFloat(desc[3] * -1).toFixed(2) + ')', // Price
+        '($' + parseFloat(priceArr.reduce(add, 0) * -1).toFixed(2) + ')', // subtotal
+      ];
+    } else if (desc[0] === 'Shipping') {
+      var object = [
+        desc[0], // Model Name
+        grade[1], // Grade
+        desc[2], // Carrier
+        ' ', // Quantity
+        '$' + desc[3], // Price
+        parseFloat(priceArr.reduce(add, 0)).toFixed(2), // subtotal
+      ];
+    } else {
+      var object = [
+        desc[0], // Model Name
+        grade[1], // Grade
+        desc[2], // Carrier
+        priceArr.length, // Quantity
+        '$' + desc[3], // Price
+        '$' + parseFloat(priceArr.reduce(add, 0)).toFixed(2), // subtotal
+      ];
+    }
 
     tableData.push(object);
   });
 
-  var templateId = '1ieHeKNczevTZxZ38-Nh4PiAhFMZN0Wg0Im8cv35oX44';
+  var pretax = parseFloat(totalArr.reduce(add, 0)).toFixed(2);
+  var total = priceWithTax(pretax, taxrateFloat);
+  var taxamt = parseFloat(total - pretax).toFixed(2);
+
+  var templateId = '172iPN89m0d5mxBV6oWOaYSRxDn84RLA15StvU3S2arA';
 
   var documentId = DriveApp.getFileById(templateId)
       .makeCopy()
       .getId();
   DriveApp.getFileById(documentId).setName(invoice + ' ' + company);
 
-  var body = DocumentApp.openById(documentId).getBody();
+  var doc = DocumentApp.openById(documentId);
+  var body = doc.getBody();
 
   body.replaceText('{{date}}', date);
   body.replaceText('{{invoice}}', invoice);
@@ -164,16 +183,18 @@ function doPost(e) {
     }
   }
   table.removeRow(1);
-}
 
-doc.saveAndClose();
-var pdf_file = doc.getAs('application/pdf');
-GmailApp.sendEmail(
-    'alee@spherethat.com',
-    'Attachment example',
-    'Please see the attached file.',
-    {
-      attachments: [pdf_file],
-      name: 'Test Name',
-    }
-);
+  doc.saveAndClose();
+
+  var pdfFile = DriveApp.getFileById(documentId).getAs(MimeType.PDF);
+  GmailApp.sendEmail(
+      'wholesale@spherethat.ca',
+      invoice + ' ' + company,
+      'Invoice attached. Need to edit the invoice? Click this: https://docs.google.com/document/d/' +
+      documentId,
+      {
+        attachments: [pdfFile],
+        name: 'DANGER ACTION',
+      }
+  );
+}
