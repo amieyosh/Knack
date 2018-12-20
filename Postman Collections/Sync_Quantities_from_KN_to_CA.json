@@ -1,0 +1,414 @@
+{
+  "info": {
+    "_postman_id": "06ce84bd-70a9-53f7-44c8-be27c8f95e83",
+    "name": "Sync Quantities from KN to CA",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "764d1b27-2c38-2138-ee08-f5f135e46b1c",
+      "name": "Knack Quantity & Average Cost Pull",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "68ee6e4a-d222-4a9e-b306-036ad72a8002",
+            "exec": [
+              "/*",
+              "Purpose: Cleans Knack data after Knack API call. Place in test scripts in Postman",
+              "Company: Sphere (Sigma Wireless inc.)",
+              "Author: Andrew Lee",
+              "Version: 2.02",
+              "Last Update: 26-Feb-18, 11:04",
+              "",
+              "Next steps:",
+              "1. 'test' flag if successful/bugged",
+              "2. error handling..? how sia...",
+              "",
+              "*/",
+              "",
+              "",
+              "//The initial response includes some summary data at the top, we only need the data in the 'records' section",
+              "jsonData = pm.response.json();",
+              "arr = jsonData.records;",
+              "",
+              "//if no correction is required terminate collection run.",
+              "if (jsonData.total_records<1) {",
+              "    postman.setNextRequest(null);",
+              "    console.log (\"No Corrections found\")",
+              "} else{",
+              "",
+              "    //Create a blank array which we populate with selected data from the response",
+              "    arrayList = [];",
+              "    ",
+              "    //Populate the blank object",
+              "      for (var i = 0; i<arr.length; i++){",
+              "        var Obj = {",
+              "          \"knid\": arr[i].id,",
+              "          \"caid\" : arr[i].field_862,",
+              "          \"quantity\" : arr[i].field_1643,",
+              "          \"avgcost\": arr[i].field_746,",
+              "        };",
+              "        //!important! otherwise the object will keep being overwritten with data from the next iteration",
+              "        arrayList.push(Obj);",
+              "      }",
+              "    ",
+              "    ",
+              "    //debug log, comment out to streamline",
+              "    //console.log((arrayList));",
+              "    ",
+              "    //Set Data and count as Environment variables, allowing the data to be used in followup requests",
+              "    pm.environment.set(\"knquant\",JSON.stringify(arrayList));",
+              "    pm.environment.set(\"total\",parseInt(arr.length)-1);",
+              "    pm.environment.set(\"count\", 0);",
+              "    ",
+              "    ",
+              "    //console.log(environment.knquant);",
+              "}",
+              "",
+              "",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-Knack-Application-Id",
+            "value": "5803cd7ca2fe59e9154c96e3"
+          },
+          {
+            "key": "X-Knack-REST-API-KEY",
+            "value": "84e10cb0-93d4-11e6-ae4f-3bccb458bbf0"
+          }
+        ],
+        "body": {},
+        "url": {
+          "raw": "https://api.knack.com/v1/objects/object_2/records?page=1&rows_per_page=1000&filters=[{\"field\":\"field_862\", \"operator\":\"is+not+blank\"},{\"field\":\"field_895\",\"operator\":\"is\",\"value\":\"True\"}]",
+          "protocol": "https",
+          "host": [
+            "api",
+            "knack",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "objects",
+            "object_2",
+            "records"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1",
+              "equals": true
+            },
+            {
+              "key": "rows_per_page",
+              "value": "1000",
+              "equals": true
+            },
+            {
+              "key": "filters",
+              "value": "[{\"field\":\"field_862\", \"operator\":\"is+not+blank\"},{\"field\":\"field_895\",\"operator\":\"is\",\"value\":\"True\"}]",
+              "equals": true
+            }
+          ]
+        },
+        "description": "This is only for retrieving products to put into ChannelAdvisor and not for updating inventory on an ongoing basis."
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "30f4a302-9d16-4c7a-ba8a-086fff57210f",
+      "name": "ChannelAdvisor - Get Access Token copy Copy",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "844fa50e-6708-4d66-9888-ff1ada528984",
+            "type": "text/javascript",
+            "exec": [
+              "var raw = pm.response.json();",
+              "var bearertoken = raw.access_token;",
+              "pm.globals.set(\"tokenY\", bearertoken);",
+              "",
+              "console.log(pm.globals.get(\"tokenY\"));",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "4bcab388-cdfb-422f-b0db-c9e42ec3e966",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic NDZxcGh0NGhid2V6cTc0eWJqazFucnl6ZDZjajJ2cWY6ZWM0TDJ6VGpoVXlZVExIOWZrOTE1UQ=="
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "grant_type=refresh_token&refresh_token=POmOh2552cTruju3TXmUhm3sbmTdR6n2xZOzQFO1w_c"
+        },
+        "url": "https://api.channeladvisor.com/oauth2/token",
+        "description": "Omg it works"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "a47db9f3-e936-7518-206b-8ca3e84f4d2a",
+      "name": "CaQuant",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "05ae5e34-b56f-4ddf-8b36-b6f146e26e30",
+            "exec": [
+              "var y = parseInt(environment.count);",
+              "var basedata = JSON.parse(environment.knquant);",
+              "",
+              "",
+              "",
+              "",
+              "console.log(environment.count);",
+              "console.log(environment.total);",
+              "",
+              "pm.environment.set(\"CAIDY\", parseInt(basedata[y].caid));",
+              "pm.environment.set(\"caquant\", parseInt(basedata[y].quantity));",
+              "",
+              "console.log(\"CAid\" + environment.CAIDY);",
+              "console.log(environment.caquant);",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "a6edc60f-776e-4ac3-8310-94b2f948fb3e",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"Value\":{\n    \"UpdateType\": \"InStock\",\n    \"Updates\": [{\n        \"DistributionCenterID\": 0,\n        \"Quantity\": {{caquant}}\n    }]\n    }\n}"
+        },
+        "url": {
+          "raw": "https://api.channeladvisor.com/v1/Products({{CAIDY}})/UpdateQuantity?access_token={{tokenY}}",
+          "protocol": "https",
+          "host": [
+            "api",
+            "channeladvisor",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "Products({{CAIDY}})",
+            "UpdateQuantity"
+          ],
+          "query": [
+            {
+              "key": "access_token",
+              "value": "{{tokenY}}",
+              "equals": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "31fa4d81-68f9-a853-6058-77fef87b976c",
+      "name": "CaAvgCost",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "8dc27d4b-6978-4f37-b134-bad3343d232d",
+            "exec": [
+              "var y = parseInt(environment.count);",
+              "var basedata = JSON.parse(environment.knquant);",
+              "",
+              "",
+              "console.log(environment.count);",
+              "//console.log(environment.total);",
+              "",
+              "pm.environment.set(\"CAIDY\", parseInt(basedata[y].caid));",
+              "pm.environment.set(\"caavgcost\", JSON.stringify(basedata[y].avgcost));",
+              "",
+              "//console.log(environment.CAIDY);",
+              "//console.log(environment.caavgcost);",
+              "pm.environment.unset(\"variable_key\");"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "55c12b81-aed7-44d5-a039-698f7d1fcbde",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"Value\":\n  {\n    \"Attributes\":\n      [{\n        \"Name\": \"SphereAvgCost\",\n        \"Value\": {{caavgcost}}\n      }]\n  }\n}\n"
+        },
+        "url": {
+          "raw": "https://api.channeladvisor.com/v1/Products({{CAIDY}})/UpdateAttributes?access_token={{tokenY}}",
+          "protocol": "https",
+          "host": [
+            "api",
+            "channeladvisor",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "Products({{CAIDY}})",
+            "UpdateAttributes"
+          ],
+          "query": [
+            {
+              "key": "access_token",
+              "value": "{{tokenY}}",
+              "equals": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "c0557690-50e2-2d4f-302a-8ae137a9c203",
+      "name": "KN send Quantity copy",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "00894cc8-1259-420f-b88e-467444d88526",
+            "type": "text/javascript",
+            "exec": [
+              "var i = parseInt(environment.count);",
+              "var basedata = JSON.parse(environment.knquant);",
+              "",
+              "pm.environment.set(\"knid\", basedata[i].knid);",
+              "pm.environment.set(\"caq\", basedata[i].quantity);",
+              "",
+              "console.log(environment.knid);",
+              "console.log(environment.count);",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "dc07029e-91e0-44b7-9662-029fcef36742",
+            "type": "text/javascript",
+            "exec": [
+              "if (environment.count<environment.total) {",
+              "    pm.environment.set(\"count\", parseInt(environment.count)+1);",
+              "    postman.setNextRequest(\"CaQuant\");",
+              "} else{",
+              "    postman.setNextRequest(null);",
+              "    }"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-Knack-Application-Id",
+            "value": "5803cd7ca2fe59e9154c96e3"
+          },
+          {
+            "key": "X-Knack-REST-API-KEY",
+            "value": "84e10cb0-93d4-11e6-ae4f-3bccb458bbf0"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\"field_890\" : {{caq}}\n}\n"
+        },
+        "url": "https://api.knack.com/v1/objects/object_2/records/{{knid}}"
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "9b451f24-094b-4e1d-8618-af021ad093c5",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "0bffcfcd-f38b-4616-bcc7-8f72a043e874",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
